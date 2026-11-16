@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@1..144,1..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import "./themes/ocean.css";
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    color-scheme: light dark;
+
+    --surface: light-dark(oklch(100% 0 0), oklch(17% 0.01 350));
+    --surface-muted: light-dark(oklch(97% 0 0), oklch(20% 0.012 350));
+    --surface-raised: light-dark(oklch(100% 0 0), oklch(25% 0.015 350));
+    --surface-tint: light-dark(oklch(97.1% 0.014 343), oklch(21% 0.03 350));
+    --field: light-dark(oklch(95.5% 0 0), oklch(30% 0.015 350));
+    --border: light-dark(oklch(87% 0.01 260), oklch(38% 0.02 350));
+
+    --text: light-dark(oklch(29% 0 0), oklch(95% 0.005 350));
+    --text-muted: light-dark(oklch(44.6% 0.03 257), oklch(75% 0.015 350));
+
+    --primary: light-dark(oklch(59.2% 0.249 0.6), oklch(68.138% 0.23456 351.429));
+    --primary-hover: light-dark(oklch(52.5% 0.223 4), oklch(75.06% 0.17669 347.785));
+    --on-primary: light-dark(oklch(100% 0 0), oklch(18% 0.03 350));
+    --accent: light-dark(oklch(79.5% 0.184 86), oklch(85% 0.17 90));
+
+    --overlay: oklch(0% 0 0);
+    --shadow: light-dark(oklch(30% 0.02 350 / 0.18), oklch(0% 0 0 / 0.5));
+
+    --font-body: "Google Sans Flex", "Google Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-heading: "Google Sans", "Google Sans Flex", ui-sans-serif, sans-serif;
+  }
+
+  /* classes posées sur <html> par le bouton du header */
+  .dark,
+  [data-theme="dark"] {
+    color-scheme: dark;
+  }
+
+  .light {
+    color-scheme: light;
+  }
+}
+
+@custom-variant dark (&:where(.dark, .dark *, [data-theme=dark]));
+
+/* tokens du theme */
+@theme inline {
+  /* Couleurs */
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-surface-raised: var(--surface-raised);
+  --color-surface-tint: var(--surface-tint);
+  --color-field: var(--field);
+  --color-border: var(--border);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-on-primary: var(--on-primary);
+  --color-accent: var(--accent);
+  --color-overlay: var(--overlay);
+  --color-shadow: var(--shadow);
+
+  /* Typo */
+  --font-sans: var(--font-body);
+  --font-display: var(--font-heading);
+
+  /* Espacements */
+  --spacing-header: 4rem;
+  --spacing-section: 5rem;
+  --spacing-card-img: 11rem;
+
+  /* Formes */
+  --radius-field: 0.5rem;
+  --radius-card: 0.75rem;
+
+  /* Ombres */
+  --shadow-card: 0 10px 30px -12px var(--shadow);
+  --shadow-card-hover: 0 20px 40px -12px var(--shadow);
+}
+
+@layer components {
+  .card-btn {
+    @apply hover:bg-text-muted hover:text-surface-muted cursor-pointer rounded-full border border-current p-2 transition-colors duration-300;
+  }
+
+  .btn {
+    @apply rounded-field bg-primary px-8 py-2.5 text-sm font-semibold text-on-primary transition-colors hover:bg-primary-hover;
+  }
+
+  .field {
+    @apply rounded-field border border-border bg-field px-3 text-sm text-text outline-none placeholder:text-text-muted focus:border-primary focus:ring-2 focus:ring-primary/30;
+  }
+}

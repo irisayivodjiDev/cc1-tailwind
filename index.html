@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wanderly</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <link rel="stylesheet" href="src/input.css" />
+  </head>
+  <body class="bg-surface font-sans text-text antialiased">
+    <nav class="sticky top-0 z-10 border-b border-border bg-surface">
+      <div class="mx-auto flex h-header max-w-6xl items-center justify-between px-6">
+        <a href="#" aria-label="Wanderly, accueil">
+          <img src="assets/logo.svg" alt="Wanderly" class="h-8 w-auto dark:invert" />
+        </a>
+        <div class="flex items-center gap-10 md:gap-24">
+          <ul class="hidden items-center gap-10 text-sm sm:flex">
+            <li><a href="#destinations" class="hover:text-primary hover:underline">Destinations</a></li>
+            <li><a href="#offres" class="hover:text-primary hover:underline">Offres</a></li>
+            <li><a href="#contact" class="hover:text-primary hover:underline">Contact</a></li>
+          </ul>
+          <div class="flex items-center gap-3">
+            <button id="ocean-btn" type="button" aria-pressed="false" class="h-10 rounded-full border border-border px-3 text-sm hover:border-primary hover:text-primary">Océan</button>
+            <button id="theme-btn" type="button" aria-label="Changer de thème" class="size-10 rounded-full border border-border text-lg hover:border-primary hover:text-primary">☾</button>
+            <a href="#" class="btn">Réserver</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <header class="relative overflow-hidden px-6 py-24 text-center text-white">
+      <img src="assets/santorini.jpeg" alt="" class="absolute inset-0 size-full object-cover" />
+      <div class="absolute inset-0 bg-overlay/35"></div>
+
+      <div class="relative">
+        <p class="mb-8 text-sm font-semibold tracking-widest text-white/90 uppercase">L'évasion commence ici</p>
+        <h1 class="font-display text-2xl leading-tight font-bold md:text-5xl">Le monde vous attend.</h1>
+        <p class="mt-3 text-base text-white/90 md:text-lg">Des séjours sur mesure, des souvenirs pour toujours.</p>
+
+        <form class="scheme-light mx-auto mt-10 flex max-w-4xl flex-col items-stretch gap-4 rounded-field bg-surface-raised p-3 text-left text-text md:flex-row md:items-center">
+          <label class="flex flex-1 flex-col px-3 py-1">
+            <span class="text-sm font-semibold">Destination</span>
+            <input type="text" placeholder="Où souhaitez-vous partir ?" class="mt-1 bg-transparent text-sm text-text-muted outline-none placeholder:text-text-muted" />
+          </label>
+          <label class="flex flex-col px-3 py-1 md:w-44">
+            <span class="text-sm font-semibold">Départ</span>
+            <input type="text" placeholder="Ajouter une date" onfocus="this.type='date'" class="mt-1 bg-transparent text-sm text-text-muted outline-none placeholder:text-text-muted" />
+          </label>
+          <label class="flex flex-col px-3 py-1 md:w-44">
+            <span class="text-sm font-semibold">Retour</span>
+            <input type="text" placeholder="Ajouter une date" onfocus="this.type='date'" class="mt-1 bg-transparent text-sm text-text-muted outline-none placeholder:text-text-muted" />
+          </label>
+          <button type="submit" class="btn py-3.5">Chercher</button>
+        </form>
+
+        <p class="mt-10 text-sm text-white/90">Votre prochaine histoire commence par un voyage.</p>
+      </div>
+    </header>
+
+    <main>
+      <section id="destinations" class="bg-surface-muted py-section">
+        <div class="mx-auto max-w-6xl px-6">
+          <p class="text-lg font-semibold uppercase text-primary">TROUVEZ VOTRE AILLEURS</p>
+          <h2 class="mt-2 font-display text-2xl font-bold">Nos destinations populaires</h2>
+          <div class="mt-1 flex items-center justify-between text-sm text-text-muted">
+            <p>Des lieux d’exception, sélectionnés pour vous.</p>
+            <p>À vous de choisir votre horizon.</p>
+          </div>
+
+          <div class="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="group overflow-hidden rounded-card bg-surface-raised shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-card-hover">
+              <img src="assets/santorini.jpeg" alt="Santorini" class="h-card-img w-full object-cover transition duration-500 group-hover:scale-105" />
+              <div class="p-5">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-lg font-bold text-primary">Santorini</h3>
+                  <span class="text-sm font-semibold text-accent">★ 4.8</span>
+                </div>
+                <p class="mt-2 text-sm text-text-muted">Grèce · Évasion en Méditerranée</p>
+                <p class="mt-2 text-sm text-text-muted">À partir de 1 290 € / personne</p>
+              </div>
+            </article>
+
+            <article class="group overflow-hidden rounded-card bg-surface-raised shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-card-hover">
+              <img src="assets/kyoto.jpeg" alt="Kyoto" class="h-card-img w-full object-cover transition duration-500 group-hover:scale-105" />
+              <div class="p-5">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-lg font-bold text-primary">Kyoto</h3>
+                  <span class="text-sm font-semibold text-accent">★ 4.9</span>
+                </div>
+                <p class="mt-2 text-sm text-text-muted">Japon · Entre temples et jardins</p>
+                <p class="mt-2 text-sm text-text-muted">À partir de 1 290 € / personne</p>
+              </div>
+            </article>
+
+            <article class="group overflow-hidden rounded-card bg-surface-raised shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-card-hover">
+              <img src="assets/lisbon.jpeg" alt="Lisbon" class="h-card-img w-full object-cover transition duration-500 group-hover:scale-105" />
+              <div class="p-5">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-lg font-bold text-primary">Lisbon</h3>
+                  <span class="text-sm font-semibold text-accent">★ 4.7</span>
+                </div>
+                <p class="mt-2 text-sm text-text-muted">Portugal · La ville aux mille couleurs</p>
+                <p class="mt-2 text-sm text-text-muted">À partir de 1 290 € / personne</p>
+              </div>
+            </article>
+
+            <article class="group overflow-hidden rounded-card bg-surface-raised shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-card-hover">
+              <img src="assets/marrakech.jpeg" alt="Marrakech" class="h-card-img w-full object-cover transition duration-500 group-hover:scale-105" />
+              <div class="p-5">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-lg font-bold text-primary">Marrakech</h3>
+                  <span class="text-sm font-semibold text-accent">★ 4.6</span>
+                </div>
+                <p class="mt-2 text-sm text-text-muted">Maroc · Les couleurs de l’Orient</p>
+                <p class="mt-2 text-sm text-text-muted">À partir de 1 290 € / personne</p>
+              </div>
+            </article>
+
+            <article class="group overflow-hidden rounded-card bg-surface-raised shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-card-hover">
+              <img src="assets/Reykjavik.jpeg" alt="Reykjavik" class="h-card-img w-full object-cover transition duration-500 group-hover:scale-105" />
+              <div class="p-5">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-lg font-bold text-primary">Reykjavik</h3>
+                  <span class="text-sm font-semibold text-accent">★ 4.8</span>
+                </div>
+                <p class="mt-2 text-sm text-text-muted">Islande · Au rythme de la nature</p>
+                <p class="mt-2 text-sm text-text-muted">À partir de 1 290 € / personne</p>
+              </div>
+            </article>
+
+            <article class="group overflow-hidden rounded-card bg-surface-raised shadow-card transition duration-300 hover:-translate-y-1 hover:shadow-card-hover">
+              <img src="assets/Bali.jpeg" alt="Bali" class="h-card-img w-full object-cover transition duration-500 group-hover:scale-105" />
+              <div class="p-5">
+                <div class="flex items-center justify-between">
+                  <h3 class="text-lg font-bold text-primary">Bali</h3>
+                  <span class="text-sm font-semibold text-accent">★ 4.7</span>
+                </div>
+                <p class="mt-2 text-sm text-text-muted">Indonésie · Un paradis tropical</p>
+                <p class="mt-2 text-sm text-text-muted">À partir de 1 290 € / personne</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="bg-surface-tint px-6 py-section">
+        <div class="mx-auto max-w-3xl rounded-card bg-surface-raised px-6 py-8 shadow-card md:px-8">
+          <h2 class="text-center font-display text-3xl font-bold text-primary">Contactez-nous</h2>
+          <p class="mt-1 text-center text-base text-text-muted">Une envie d’ailleurs ? Parlons de votre prochain voyage.</p>
+
+          <form class="mt-6 flex flex-col gap-4">
+            <div class="grid gap-4 sm:grid-cols-2">
+              <label class="flex flex-col gap-2">
+                <span class="text-sm font-semibold">Nom</span>
+                <input type="text" name="nom" placeholder="John Doe" class="field h-11" />
+              </label>
+              <label class="flex flex-col gap-2">
+                <span class="text-sm font-semibold">Email</span>
+                <input type="email" name="email" placeholder="john.doe@example.com" class="field h-11" />
+              </label>
+            </div>
+            <label class="flex flex-col gap-2">
+              <span class="text-sm font-semibold">Sujet</span>
+              <input type="text" name="sujet" placeholder="L’objet de votre demande" class="field h-11" />
+            </label>
+            <label class="flex flex-col gap-2">
+              <span class="text-sm font-semibold">Message</span>
+              <textarea name="message" placeholder="Racontez-nous le voyage dont vous rêvez…" rows="3" class="field resize-y py-3"></textarea>
+            </label>
+            <div class="mt-1 flex flex-col items-start gap-4">
+              <button type="submit" class="btn px-10 text-base">Envoyer</button>
+              <span class="text-sm text-text-muted">Notre équipe vous répond sous 48 h.</span>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-surface pt-12 pb-8">
+      <div class="mx-auto max-w-6xl px-6">
+        <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
+          <div class="lg:col-span-2">
+            <p class="font-display text-xl font-bold">Wanderly</p>
+            <p class="mt-2 text-sm leading-snug text-text-muted">Le voyage commence avec vous.<br />Nous imaginons la suite.</p>
+            <div class="mt-4 flex gap-2">
+              <a href="#" aria-label="Facebook"
+                 class="flex size-8 items-center justify-center rounded-field bg-surface-muted text-text-muted transition-colors hover:bg-primary hover:text-on-primary"
+                 title="Facebook">
+                <i class="fa-brands fa-facebook-f text-xs" aria-hidden="true"></i>
+              </a>
+              <a href="#" aria-label="Instagram"
+                 class="flex size-8 items-center justify-center rounded-field bg-surface-muted text-text-muted transition-colors hover:bg-primary hover:text-on-primary"
+                 title="Instagram">
+                <i class="fa-brands fa-instagram text-xs" aria-hidden="true"></i>
+              </a>
+              <a href="#" aria-label="TikTok"
+                 class="flex size-8 items-center justify-center rounded-field bg-surface-muted text-text-muted transition-colors hover:bg-primary hover:text-on-primary"
+                 title="TikTok">
+                <i class="fa-brands fa-tiktok text-xs" aria-hidden="true"></i>
+              </a>
+              <a href="#" aria-label="LinkedIn"
+                 class="flex size-8 items-center justify-center rounded-field bg-surface-muted text-text-muted transition-colors hover:bg-primary hover:text-on-primary"
+                 title="LinkedIn">
+                <i class="fa-brands fa-linkedin-in text-xs" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div>
+            <p class="text-base font-semibold text-primary">Explorer</p>
+            <ul class="mt-3 flex flex-col gap-3 text-sm leading-snug text-text-muted">
+              <li><a href="#destinations" class="hover:text-primary hover:underline">Destinations</a></li>
+              <li><a href="#offres" class="hover:text-primary hover:underline">Nos offres</a></li>
+              <li><a href="#" class="hover:text-primary hover:underline">Voyages sur mesure</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-base font-semibold text-primary">Aide</p>
+            <ul class="mt-3 flex flex-col gap-3 text-sm leading-snug text-text-muted">
+              <li><a href="#contact" class="hover:text-primary hover:underline">Contact</a></li>
+              <li><a href="#" class="hover:text-primary hover:underline">Questions fréquentes</a></li>
+              <li><a href="#" class="hover:text-primary hover:underline">Conseils de voyage</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-base font-semibold text-primary">Légal</p>
+            <ul class="mt-3 flex flex-col gap-3 text-sm leading-snug text-text-muted">
+              <li><a href="#" class="hover:text-primary hover:underline">Mentions légales</a></li>
+              <li><a href="#" class="hover:text-primary hover:underline">Confidentialité</a></li>
+              <li><a href="#" class="hover:text-primary hover:underline">Conditions générales</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-10 flex flex-col gap-2 border-t border-border pt-5 text-sm text-text-muted sm:flex-row sm:justify-between">
+          <p>© 2026 Wanderly. Tous droits réservés.</p>
+          <p>Fait pour les esprits voyageurs.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      const html = document.documentElement;
+      const themeBtn = document.getElementById("theme-btn");
+
+      function isDark() {
+        if (html.classList.contains("dark")) return true;
+        if (html.classList.contains("light")) return false;
+        return matchMedia("(prefers-color-scheme: dark)").matches;
+      }
+
+      function updateIcon() {
+        themeBtn.textContent = isDark() ? "☀" : "☾";
+      }
+
+      themeBtn.addEventListener("click", () => {
+        const dark = isDark();
+        html.classList.toggle("dark", !dark);
+        html.classList.toggle("light", dark);
+        updateIcon();
+      });
+
+      updateIcon();
+
+      const oceanBtn = document.getElementById("ocean-btn");
+
+      oceanBtn.addEventListener("click", () => {
+        const ocean = html.classList.toggle("ocean");
+        oceanBtn.textContent = ocean ? "Rose" : "Océan";
+        oceanBtn.setAttribute("aria-pressed", ocean);
+      });
+    </script>
+  </body>
+</html>

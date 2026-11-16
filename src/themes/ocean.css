@@ -1,0 +1,25 @@
+/* Thème Océan : class="ocean" ou data-theme="ocean" sur <html> */
+@layer base {
+  html.ocean,
+  html[data-theme="ocean"] {
+    --surface: light-dark(oklch(99% 0.005 220), oklch(17% 0.02 240));
+    --surface-muted: light-dark(oklch(96.5% 0.012 220), oklch(20% 0.025 240));
+    --surface-raised: light-dark(oklch(100% 0 0), oklch(25% 0.03 240));
+    --surface-tint: light-dark(oklch(95% 0.025 210), oklch(21% 0.04 230));
+    --field: light-dark(oklch(96% 0.01 220), oklch(30% 0.03 240));
+    --border: light-dark(oklch(87% 0.02 225), oklch(38% 0.03 240));
+
+    --text: light-dark(oklch(26% 0.03 245), oklch(95% 0.01 220));
+    --text-muted: light-dark(oklch(46% 0.04 240), oklch(76% 0.02 220));
+
+    --primary: light-dark(oklch(52% 0.13 230), oklch(74% 0.12 215));
+    --primary-hover: light-dark(oklch(44% 0.13 235), oklch(82% 0.1 210));
+    --on-primary: light-dark(oklch(100% 0 0), oklch(18% 0.03 240));
+    --accent: light-dark(oklch(75% 0.15 70), oklch(84% 0.14 80));
+
+    --shadow: light-dark(oklch(30% 0.05 240 / 0.2), oklch(0% 0 0 / 0.5));
+
+    --font-body: "Merriweather Sans", ui-sans-serif, system-ui, sans-serif;
+    --font-heading: "Lobster Two", ui-sans-serif, sans-serif;
+  }
+}

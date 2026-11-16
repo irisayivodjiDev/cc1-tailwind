@@ -1,0 +1,148 @@
+1. NAVIGATION
+=============
+
+Wanderly
+Destinations
+Offres
+Contact
+Réserver
+
+
+2. HERO
+=======
+
+L’ÉVASION COMMENCE ICI
+Le monde vous attend.
+Des séjours sur mesure, des souvenirs pour toujours.
+
+— Recherche de séjour —
+
+Destination
+Où souhaitez-vous partir ?
+
+Départ
+Ajouter une date
+
+Retour
+Ajouter une date
+
+Chercher
+
+Votre prochaine histoire commence par un voyage.
+
+
+3. DESTINATIONS POPULAIRES
+=========================
+
+TROUVEZ VOTRE AILLEURS
+Nos destinations populaires
+Des lieux d’exception, sélectionnés pour vous.
+À vous de choisir votre horizon.
+
+— Santorini —
+
+Santorini
+★
+4.8
+Grèce · Évasion en Méditerranée
+À partir de 1 290 €
+/ personne
+
+— Kyoto —
+
+Kyoto
+★
+4.9
+Japon · Entre temples et jardins
+À partir de 1 290 €
+/ personne
+
+— Lisbon —
+
+Lisbon
+★
+4.7
+Portugal · La ville aux mille couleurs
+À partir de 1 290 €
+/ personne
+
+— Marrakech —
+
+Marrakech
+★
+4.6
+Maroc · Les couleurs de l’Orient
+À partir de 1 290 €
+/ personne
+
+— Reykjavik —
+
+Reykjavik
+★
+4.8
+Islande · Au rythme de la nature
+À partir de 1 290 €
+/ personne
+
+— Bali —
+
+Bali
+★
+4.7
+Indonésie · Un paradis tropical
+À partir de 1 290 €
+/ personne
+
+
+4. CONTACT
+==========
+
+Contactez-nous
+Une envie d’ailleurs ? Parlons de votre prochain voyage.
+
+Nom
+Votre nom
+
+Email
+vous@exemple.fr
+
+Sujet
+L’objet de votre demande
+
+Message
+Racontez-nous le voyage dont vous rêvez…
+
+Envoyer
+Notre équipe vous répond sous 48 h.
+
+
+5. FOOTER
+=========
+
+Wanderly
+Le voyage commence avec vous.
+Nous imaginons la suite.
+
+— Explorer —
+
+Explorer
+Destinations
+Nos offres
+Voyages sur mesure
+
+— Aide —
+
+Aide
+Contact
+Questions fréquentes
+Conseils de voyage
+
+— Légal —
+
+Légal
+Mentions légales
+Confidentialité
+Conditions générales
+
+© 2026 Wanderly. Tous droits réservés.
+Fait pour les esprits voyageurs.
